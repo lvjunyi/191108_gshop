@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./../assets/css/reset.css">
+  <title>Document</title>
+  <style>
+    .slide {
+      width: 600px;
+      height: 200px;
+      margin: auto;
+      font-family: Arial;
+      overflow: hidden;
+      color: #fff;
+    }
+    .slide-auto {
+      width: 9999px;
+    }
+    li{
+      float: left;
+      width: 600px;
+      height: 200px;
+      list-style: none;
+      font-size: 36px;
+      line-height: 200px;
+    }
+    .slide li:nth-child(1) {
+        background: #9fa8ef;
+    }
+
+    .slide li:nth-child(2) {
+        background: #ef9fb1;
+    }
+
+    .slide li:nth-child(3) {
+        background: #9fefc3;
+    }
+    /*//自动播放*/
+    .slide-auto {
+        animation: marginLeft 5.5s infinite;
+    }
+
+    @keyframes marginLeft {
+        0% {
+            margin-left: 0;
+        }
+
+        28.5% {
+            margin-left: 0;
+        }
+
+        33.3% {
+            margin-left: -600px;
+        }
+
+        62% {
+            margin-left: -600px;
+        }
+
+        66.7% {
+            margin-left: -1200px;
+        }
+
+        99.9% {
+            margin-left: -1200px;
+        }
+
+        100% {
+            margin-left: 0;
+        }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <ul class="slide-auto">
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ul>
+  </div>
+
+</body>
+</html>
